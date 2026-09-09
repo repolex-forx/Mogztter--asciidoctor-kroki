@@ -1,0 +1,21 @@
+[2026-09-09T11:22:07Z] === ENRICH ITERATION 1 START | repo=Mogztter/asciidoctor-kroki sha=050e625d ===
+[2026-09-09T11:22:07Z] [iter=1] PHASE START: enrich repo=Mogztter/asciidoctor-kroki sha=050e625d runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/050e625d-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/050e625dc939371788b2774cb3169f7749e1bba3.nq.gz
+[2026-09-09T11:22:29Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=80 MB
+[2026-09-09T11:22:36Z] [iter=1] AST store loaded triples=812432 load_secs=7 mem_mb=832 MB
+[2026-09-09T11:22:36Z] [iter=1] Step 2: Finding LSP targets mem_mb=832 MB
+[2026-09-09T11:22:36Z] [iter=1] LSP targets found call_sites=5210 imports=1 extends=0 implements=0 secs=0
+[2026-09-09T11:22:36Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=832 MB
+[2026-09-09T11:22:39Z] [iter=1] Position index built positions=56554 nodes_with_types=64736 secs=2 mem_mb=832 MB
+[2026-09-09T11:22:39Z] [iter=1] Step 3: Starting LSP resolution mem_mb=832 MB already_completed_types=[] already_completed_files=0
+[2026-09-09T11:22:39Z] [iter=1] Resolving target type target_type=call_site count=5210
+[2026-09-09T11:22:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=0 resolved=0 errors=0 current=dist/browser/asciidoctor-kroki.js
+[2026-09-09T11:29:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.9 files_done=1 resolved=296 errors=2535 current=src/preprocess.js
+[2026-09-09T11:31:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.4 files_done=4 resolved=306 errors=3055 current=test/kroki-client.spec.js
+[2026-09-09T11:32:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.1 files_done=6 resolved=307 errors=3304 current=test/antora/test.spec.js
+[2026-09-09T11:32:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.6 files_done=14 resolved=316 errors=3479 current=test/500-server.js
+[2026-09-09T11:32:57Z] [iter=1] Target type resolved target_type=call_site resolved=329 errors=8745 secs=619 mem_mb=832 MB
+[2026-09-09T11:32:57Z] [iter=1] Resolving target type target_type=import_statement count=1
+[2026-09-09T11:32:59Z] [iter=1] Target type resolved target_type=import_statement resolved=1 errors=0 secs=1 mem_mb=832 MB
+[2026-09-09T11:33:02Z] [iter=1] Step 5: Writing final enrichment file triples=46267
+[2026-09-09T11:33:02Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/050e625dc939371788b2774cb3169f7749e1bba3.nq.gz size_kb=790
+[2026-09-09T11:33:02Z] [iter=1] PHASE END: enrich elapsed_s=656 elapsed_min=10.9 total_triples=46267
